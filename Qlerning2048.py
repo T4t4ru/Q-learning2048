@@ -46,7 +46,7 @@ for episode in range(1000000):
         
         reward = calculate_reward(new_board)  
         
-        # Обучение Q-learning с использованием TPU
+
         train_q_learning(state, action, new_state, reward)
         
         state = new_state
